@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Homework18</string>
+    <string name="enter_login">Enter login</string>
+    <string name="enter_password">Enter password</string>
+    <string name="save_result">Save result</string>
+    <string name="norm">Norm</string>
+    <string name="please_rate_application">Please rate application</string>
+    <string name="please_choose">\"Please, choose from two radio button \"</string>
+    <string name="thx">Thx for rating</string>
+    <string name="go_to_next_activity">Go to next activity</string>
+    <string name="required_to_enter">required to enter</string>
+    <string name="you_must_enter_out_data">You must enter out data</string>
+</resources>
