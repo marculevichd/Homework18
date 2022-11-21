@@ -26,7 +26,6 @@ class MainActivity : AppCompatActivity() {
 
         val dialog = AlertDialog.Builder(this)
             .setTitle("Confirm your data")
-            .setMessage("your login is " + tiet_login.text.toString() + "\n" + "your passwrod is " + tiet_password.text.toString())
             .setCancelable(false)
             .setPositiveButton("Accept") { dialog, _ ->
                 val intent_dialog = Intent(this, MainActivity2::class.java)
@@ -43,15 +42,12 @@ class MainActivity : AppCompatActivity() {
         button.setOnClickListener {
             if (tiet_login.text.toString().isNullOrBlank()) {
                 textInputLayout_login.setErrorIconDrawable(R.drawable.ic_baseline_warning_amber_24)
-                Toast.makeText(
-                    this,
-                    getString(R.string.you_must_enter_out_data),
-                    LENGTH_SHORT
-                ).show()
+                tiet_login.error = getString(R.string.you_must_enter_out_data)
             } else if (tiet_password.text.toString().isNullOrBlank()) {
                 textInputLayout_password.setErrorIconDrawable(R.drawable.ic_baseline_warning_amber_24)
-                Toast.makeText(this, R.string.you_must_enter_out_data, LENGTH_SHORT).show()
-            } else dialog.show()
+                tiet_password.error = getString(R.string.you_must_enter_out_data)
+            } else dialog.setMessage("Login: " + tiet_login.text.toString()
+                    + "\n" + "Password: " + tiet_password.text.toString()).show()
         }
     }
 }

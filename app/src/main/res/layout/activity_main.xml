@@ -37,13 +37,13 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout_password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="400dp"
+        android:layout_height="104dp"
         android:layout_marginStart="4dp"
         android:hint="@string/enter_password"
         app:counterEnabled="true"
         app:counterMaxLength="20"
-        app:endIconMode="password_toggle"
+
         app:helperText="@string/required_to_enter"
         app:helperTextEnabled="true"
         app:helperTextTextColor="@color/red"
@@ -56,8 +56,9 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tiet_password"
             android:hint="@string/enter_password"
+
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="67dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp" />
 
